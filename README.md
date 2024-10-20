@@ -1,2 +1,49 @@
-# syncthing
-A ansible role to install syncthing using the repo. 
+Syncthing
+=========
+
+This Ansible role installs Syncthing using the system's package repositories. Syncthing is an open-source file synchronization tool that allows you to sync files between devices securely.
+
+Requirements
+------------
+
+- Ansible 2.9 or higher. 
+- Debian or Debian based distribution.
+
+Role Variables
+--------------
+
+```shell
+syncthing_user: syncthing_user
+syncthing_group: syncthing
+syncthing_config_dir: /etc/syncthing
+```
+
+Dependencies
+------------
+
+None.
+
+Example Playbook
+----------------
+
+Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+
+```shell
+- hosts: servers
+  become: true
+  roles:
+    - role: username.syncthing
+      syncthing_version: '1.18.0'
+      syncthing_user: 'syncthing'
+      syncthing_group: 'syncthing'
+```
+
+License
+-------
+
+GNU
+
+Author Information
+------------------
+
+This role was created in 2024 by Raif Coonjah
