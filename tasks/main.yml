@@ -20,7 +20,7 @@
 
 - name: install syncthing
   ansible.builtin.package:
-    name: '{{ syncthing_version }}'
+    name: syncthing
     state: present
 
 - name: create {{ syncthing_user }} user
