@@ -13,9 +13,8 @@ Role Variables
 --------------
 
 ```shell
-syncthing_user: syncthing_user
-syncthing_group: syncthing
-syncthing_config_dir: /etc/syncthing
+syncthing_version: '1.28.0'
+syncthing_user: 'syncthing'
 ```
 
 Dependencies
@@ -32,10 +31,9 @@ Including an example of how to use your role (for instance, with variables passe
 - hosts: servers
   become: true
   roles:
-    - role: username.syncthing
-      syncthing_version: '1.18.0'
+    - role: syncthing
+      syncthing_version: '1.28.0'
       syncthing_user: 'syncthing'
-      syncthing_group: 'syncthing'
 ```
 
 License
