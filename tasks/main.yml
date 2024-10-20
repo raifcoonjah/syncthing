@@ -6,7 +6,6 @@
   loop:
     - apt-transport-https
     - ca-certificates
-    - gnupg2
 
 - name: import keyrings
   ansible.builtin.apt_key:

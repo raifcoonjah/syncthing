@@ -13,9 +13,10 @@ Role Variables
 --------------
 
 ```shell
-syncthing_version: '1.28.0'
 syncthing_user: 'syncthing'
 ```
+
+`syncthing` -> This is the default user that will be used to store syncthing content. 
 
 Dependencies
 ------------
@@ -32,8 +33,6 @@ Including an example of how to use your role (for instance, with variables passe
   become: true
   roles:
     - role: syncthing
-      syncthing_version: '1.28.0'
-      syncthing_user: 'syncthing'
 ```
 
 License
