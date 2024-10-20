@@ -16,7 +16,7 @@
   ansible.builtin.apt_repository:
     repo: "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable"
     state: present
-  when: not syncthing_candidate 
+  when: not syncthing_candidate
 
 - name: Add candidate repository
   ansible.builtin.apt_repository:
@@ -29,10 +29,10 @@
     name: syncthing
     state: present
 
-- name: create {{ syncthing_user }} user
+- name: Create syncthing user
   ansible.builtin.user:
     name: '{{ syncthing_user }}'
-    create_home: yes
+    create_home: true
     comment: syncthing user managed by Ansible
     password: '!'
 
