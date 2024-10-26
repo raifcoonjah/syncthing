@@ -17,8 +17,9 @@ syncthing_user: 'syncthing'
 syncthing_candidate: false
 ```
 
-`syncthing` -> This is the default user that will be used to store syncthing content. 
-`syncthing_candidate` -> If set to `true` the candidate repository will be installed instead. By default it is set to `false`.
+`syncthing_user`: This is the default user that will be used to store syncthing content. 
+
+`syncthing_candidate`: If set to `true` the candidate repository will be installed instead. By default it is set to `false`.
 
 Dependencies
 ------------
@@ -40,7 +41,7 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-GNU
+MIT
 
 Author Information
 ------------------
